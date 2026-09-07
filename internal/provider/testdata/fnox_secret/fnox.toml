@@ -1,0 +1,5 @@
+[providers.plain]
+type = "plain"
+
+[secrets]
+TEST_SECRET = { provider = "plain", value = "test-value-123" }

@@ -1,0 +1,10 @@
+terraform-provider-fnox
+terraform-provider-fnox_*
+dist/
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
