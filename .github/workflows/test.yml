@@ -56,8 +56,7 @@ jobs:
         with:
           terraform_version: ${{ matrix.terraform-version }}
           terraform_wrapper: false
-      - uses: dtolnay/rust-toolchain@stable
-      - run: cargo install fnox --locked
+      - uses: jdx/mise-action@v2
       - env:
           TF_ACC: "1"
         run: go test -v -cover ./...
