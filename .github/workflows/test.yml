@@ -52,11 +52,11 @@ jobs:
         with:
           go-version-file: "go.mod"
           cache: true
-      - uses: hashicorp/setup-terraform@v3
+      - uses: hashicorp/setup-terraform@v4
         with:
           terraform_version: ${{ matrix.terraform-version }}
           terraform_wrapper: false
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v4
       - env:
           TF_ACC: "1"
         run: go test -v -cover ./...
